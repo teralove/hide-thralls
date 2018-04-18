@@ -9,9 +9,6 @@ Make thralls invisible. (Can be useful for removing camera-shake effects caused 
 ## Changelog
 <details>
 
-### 1.1.0
-* [+] 
-
     1.10
     - Added awakening thralls
     - Added Command toggle
