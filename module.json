@@ -1,0 +1,8 @@
+{
+    "servers": ["https://raw.githubusercontent.com/Foglio1024/hide-thralls/master/"],
+    "supportUrl": "https://github.com/Foglio1024/hide-thralls/issues",
+	"disableAutoUpdate": false,
+	"options": {
+        "niceName": "hide-thralls"
+    }
+}

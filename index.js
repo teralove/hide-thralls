@@ -1,6 +1,6 @@
 const Command = require('command');
 
-module.exports = function HideThralls(dispatch) {
+module.exports = function HideThralls(hide_thralls) {
     
     const Thrall_IDs = [
         10235016, //Protection
@@ -16,16 +16,16 @@ module.exports = function HideThralls(dispatch) {
     const HuntingZone_ID = 1023;
     let enabled = true;
     
-    dispatch.hook('S_SPAWN_NPC', 5, (event) => {
+    hide_thralls.hook('S_SPAWN_NPC', 9, (event) => {
         if (!enabled) return;
         if (Thrall_IDs.includes(event.templateId) && event.huntingZoneId == HuntingZone_ID) {
             return false;
         }
     })
     
-    const command = Command(dispatch);
+    const command = Command(hide_thralls);
     command.add('hidethralls', ()=> {
         enabled = !enabled;
-        command.message('(hide-thralls) ' + (enabled ? 'enabled' : 'disabled'));
+        command.message('hide-thralls ' + (enabled ? 'enabled' : 'disabled'));
     });
 }
