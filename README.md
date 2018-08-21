@@ -1,3 +1,5 @@
+**Original module by teralove** - This is just a compatibility update for new proxy standards and autoupdate.
+
 # Hide Thralls
 Make thralls invisible. (Can be useful for removing camera-shake effects caused by thralls).
 
