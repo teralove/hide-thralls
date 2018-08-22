@@ -3,6 +3,9 @@
     "supportUrl": "https://github.com/Foglio1024/hide-thralls/issues",
 	"disableAutoUpdate": false,
 	"options": {
-        "niceName": "hide-thralls"
+		"settingsFile": "config.json",
+		"settingsMigrator": "setting_migrator.js",
+        "niceName": "hide-thralls",
+		"settingsVersion": 1
     }
 }
